@@ -46,8 +46,91 @@ html {
     scroll-behavior: smooth;
 }
 
+@keyframes slideInRight{
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(5px);
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft{
+    0% {
+        transform: translateX(-70%);
+        
+    }
+    100% {
+        transform: translateX(0%);
+        /* left: -50px; */
+        /* top: 60px; */
+        
+    }
+}
+
+@keyframes slideInBottom{
+    0% {
+
+        transform: translateY(70%)
+        
+    }
+    100% {
+        transform: translateY(0);
+
+        
+    }
+}
 
 
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        /* transition: all 1s; */
+        filter: blur(5px);
+        /* transform: translateX(-100%); */
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        /* transform: translateX(0); */
+    }
+    
+}
+
+.hidden{
+    /* opacity: 0;
+    transition: all 1s;
+    filter: blur(5px); */
+    /* transform: translateX(-100%); */
+    opacity: 0;
+}
+
+.show.pic{
+    animation: 1s cubic-bezier(0, 0, 0, 1) 0s 1 slideInLeft;
+    
+}
+
+.show.contact_input{
+    animation: 1s cubic-bezier(0, 0, 0, 1) 0s 1 slideInLeft;
+}
+
+.show.profile_container{
+    animation: 1s ease-in 0s 1 fadein;
+}
+
+.show{
+    /* opacity: 1;
+    filter: blur(0);
+    transform: translateX(0); */
+    animation: 1s cubic-bezier(0, 0, 0, 1) 0s 1 slideInRight;
+    opacity: 1;
+}
 /* TRANSITION */
 
 a,
@@ -342,9 +425,9 @@ section{
     background-color: #3F64FF; /* Green */
     border: none;
     color: white;
-    padding: 3.5vh 18.7vw;
+    padding: 3.5vh 19vw;
     margin: 10px;
-    line-height: 80px;
+    /* line-height: 80px; */
     text-align: center;
     text-decoration: none;
     font-weight: 700;
