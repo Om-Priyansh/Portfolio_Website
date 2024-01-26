@@ -82,6 +82,7 @@
   }
   .text_about_desc, .text_projects, .text_contact {
     font-size: 1.25rem;
+    
   }
 
   .r{
@@ -145,7 +146,18 @@
     text-align: justify;
   }
 
+  .text_projects_section{
+    float: left;
+  }
+
+  .profile_img{
+    width: 35vw;
     
+  }
+    
+  .zero{
+    display: none;
+  }
 
 
 }
