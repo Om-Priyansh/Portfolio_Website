@@ -109,27 +109,58 @@ html {
     filter: blur(5px); */
     /* transform: translateX(-100%); */
     opacity: 0;
+    transition: all 1s;
+    /* transform: translateX(-50%); */
+}
+.pic{
+    transform: translateX(-50%);
+}
+.contact_input{
+    transform: translateX(-50%);
+}
+
+.contact_details{
+    transform: translateX(50%);
+}
+
+.text_about_section{
+    transform: translateX(50%);
+}
+
+.text_projects_section{
+    transform: translateX(50%);
 }
 
 .show.pic{
-    animation: 1s cubic-bezier(0, 0, 0, 1) 0s 1 slideInLeft;
+    /* animation: 1s cubic-bezier(0, 0, 0, 1) 0s 1 slideInLeft; */
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    
     
 }
 
 .show.contact_input{
-    animation: 1s cubic-bezier(0, 0, 0, 1) 0s 1 slideInLeft;
+    /* animation: 1s cubic-bezier(0, 0, 0, 1) 0s 1 slideInLeft; */
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 .show.profile_container{
-    animation: 1s ease-in 0s 1 fadein;
+    /* animation: 1s ease-in 0s 1 fadein; */
+    /* opacity: 1;
+    filter: blur(0); */
+    /* transform: translateX(0); */
 }
 
 .show{
-    /* opacity: 1;
-    filter: blur(0);
-    transform: translateX(0); */
-    animation: 1s cubic-bezier(0, 0, 0, 1) 0s 1 slideInRight;
     opacity: 1;
+    filter: blur(0);
+    /* transform: translateX(0); */
+    /* animation: 1s cubic-bezier(0, 0, 0, 1) 0s 1 slideInRight; */
+    opacity: 1;
+    transform: translateX(0);
 }
 /* TRANSITION */
 
